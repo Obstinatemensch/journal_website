@@ -8,27 +8,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="flex-container">
-        <div><a class="active" href="#home"><img id="home-icon" src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/black_repicthousebase_1484336385-1.png" alt="Home"></a></div>
-        <div id="sai" style="color:red; font-size: 1.5rem">Engravio</div>
-        <div id="user"><a href="#contact"style="text-decoration: none;">User Name</a></div>
-      </div>
-    </nav>
-  </header>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#"><b>+</b> New Entry</a>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <!-- <span onclick="openNav()">open</span> -->
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+          <header>
+            <nav>
+              <div class="flex-container">
+                <div>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="nav-icon" src="./png-transparent-computer-icons-hamburger-button-icon-design-web-typography-bar-icon-angle-rectangle-navigation-bar-removebg-preview.png"></span>
+                  <script src="./index.js"></script>
+                </div>
+                <div><a class="active" href="#home"><img id="home-icon" src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/black_repicthousebase_1484336385-1.png" alt="Home"></a></div>
+                <div id="sai" style="color:red; font-size: 1.5rem">Engravio</div>
+                <div id="user"><a href="#contact"style="text-decoration: none;">User Name</a></div>
+              </div>
+            </nav>
+          </header>
 
-  <main style="background-color: grey;">
-    <section class="hero">
-      <div class="journal-body">
-        <h1>Welcome to your new own personal journal!</h1>
-        <p class="contents" ><input type="text" name="Course"> </p>
-      </div>
-    </section>
-  </main>
+          <main style="background-color: grey;">
+            <section class="hero">
+              <div class="journal-body">
+                <h1>Welcome to your new own personal journal!</h1>
+                <p class="contents" ><input type="text" name="Course"> </p>
+              </div>
+            </section>
+          </main>
 
-<footer>
-<p>&copy; Aravind and Prayag</p>
-</footer>
+        <footer>
+        <p>&copy; Aravind and Prayag</p>
+        </footer>
+    </div>
 </body>
 </html>
