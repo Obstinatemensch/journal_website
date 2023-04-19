@@ -11,6 +11,10 @@
   color: white;
   font-size: 30px;
 }
+body {
+  background-image: url("https://images.hdqwalls.com/download/abstract-simple-background-4k-lp-1920x1080.jpg");
+  background-color: #cccccc;
+}
 /* Style the header */
 .flex-container {
   background-color: #505050;
